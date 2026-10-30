@@ -19,7 +19,7 @@ The platform requires **zero internet connection** after initial setup, **zero p
 
 ---
 
-## ⚠️ 2. Problem Statement
+##  2. Problem Statement
 
 Most modern web games and AI-assisted experiences suffer from three major vulnerabilities:
 
@@ -60,7 +60,7 @@ Most modern web games and AI-assisted experiences suffer from three major vulner
 
 ---
 
-## 🖼️ 4. Screenshots & Interface Showcase
+## 🖼️ 4. Screenshots
 
 ### Hero & Atmospheric Ambiance
 ![Hero Showcase](./screenshots/01-hero-showcase.png)
