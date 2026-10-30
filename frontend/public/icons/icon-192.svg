@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <radialGradient id="balloonGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FF4D5A" />
+      <stop offset="40%" stop-color="#A51F2B" />
+      <stop offset="100%" stop-color="#4B1018" />
+    </radialGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A51F2B" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#111827" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="192" height="192" fill="#111827" rx="40" />
+  <circle cx="96" cy="80" r="70" fill="url(#glowGrad)" />
+  
+  <!-- Red Balloon -->
+  <ellipse cx="96" cy="74" rx="48" ry="58" fill="url(#balloonGrad)" />
+  <ellipse cx="80" cy="50" rx="14" ry="7" fill="#FFFFFF" opacity="0.35" transform="rotate(-20 80 50)" />
+  
+  <!-- Balloon Knot -->
+  <polygon points="96,132 89,140 103,140" fill="#75131C" />
+  
+  <!-- Balloon String -->
+  <path d="M 96,140 Q 86,155 98,170 T 94,185" fill="none" stroke="#D6A56C" stroke-width="2.5" stroke-linecap="round" />
+  
+  <!-- Creepy Smile in Balloon -->
+  <path d="M 76,86 Q 96,110 116,86" fill="none" stroke="#F4E4CC" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+  <circle cx="82" cy="74" r="3" fill="#F4E4CC" opacity="0.8" />
+  <circle cx="110" cy="74" r="3" fill="#F4E4CC" opacity="0.8" />
+</svg>

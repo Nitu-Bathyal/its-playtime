@@ -1,0 +1,38 @@
+[
+  {
+    "id": "lead_1",
+    "location": "Town Square",
+    "clueName": "Ripped Carnival Flyer",
+    "description": "A rain-soaked poster advertising 'Pandora's Grand Travelling Carnivale & Curiosities - October 1988'. The clown's eyes have been scratched out with a rusted needle.",
+    "discoveredLore": "Townsfolk reported children slipping out of their bedrooms at 3 AM following the sound of calliope music.",
+    "unlockedItem": "Rusted Pin",
+    "associatedCode": "1988"
+  },
+  {
+    "id": "lead_2",
+    "location": "Abandoned Pharmacy",
+    "clueName": "Prescription Ledger Scrap",
+    "description": "Page 42 of the pharmacist's log. Notes describe a patient suffering from intense waking nightmares of a scarlet balloon tapping against their 2nd floor window.",
+    "discoveredLore": "The patient wrote in the margin: 'It doesn't burst. It whispers.'",
+    "unlockedItem": "Mortar Key",
+    "associatedCode": "042"
+  },
+  {
+    "id": "lead_3",
+    "location": "Police Station Cell Block",
+    "clueName": "Interrogation Tape Transcript",
+    "description": "A typed log from Detective Vance: 'Suspect claims he didn't run away. He said the sewer grates opened up and invited him in to escape the cold.'",
+    "discoveredLore": "A bloody fingerprint marks the bottom of the folder: the fingerprint matches no human record.",
+    "unlockedItem": "Detective's Badge",
+    "associatedCode": "713"
+  },
+  {
+    "id": "lead_4",
+    "location": "Sewer Sluice Gate",
+    "clueName": "Engraved Valve Wheel",
+    "description": "A heavy cast iron valve wheel encrusted with dried salt and tallow. Inscribed around the rim: 'DEEP DERRY SEWERS - SANCTUARY OF SHADOWS'.",
+    "discoveredLore": "Turning the valve in sequence 3-6-9 drains the primary canal leading to the Clown's Lair.",
+    "unlockedItem": "Heavy Valve Wheel",
+    "associatedCode": "369"
+  }
+]

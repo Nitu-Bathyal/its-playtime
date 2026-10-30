@@ -1,0 +1,64 @@
+[
+  {
+    "id": "p1",
+    "type": "sequence",
+    "difficulty": "novice",
+    "title": "The Mortuary Lock Code",
+    "description": "Scratched into the brass dial of the iron gate are numbers. Determine the missing final digit to unlock the passage.",
+    "sequence": [3, 6, 12, 24, 48],
+    "target": "?",
+    "answer": "96",
+    "acceptableAnswers": ["96"],
+    "rule": "Each number is multiplied by 2.",
+    "hints": ["Examine the ratio between consecutive numbers.", "3 * 2 = 6, 6 * 2 = 12...", "Double the last number: 48 * 2."]
+  },
+  {
+    "id": "p2",
+    "type": "cipher",
+    "difficulty": "investigator",
+    "title": "The Caretaker's Rotated Scribble",
+    "description": "A bloody diary page has the word 'RUN' written in Caesar cipher (shifted forward by 3 letters: R->U, U->X, N->Q = UXQ). Decode this warning found on the wall: 'KHOOR'. What does it say?",
+    "cipherText": "KHOOR",
+    "shift": 3,
+    "answer": "HELLO",
+    "acceptableAnswers": ["HELLO", "hello"],
+    "rule": "Caesar cipher with shift 3 (subtract 3 positions in the alphabet: K->H, H->E, O->L, O->L, R->O).",
+    "hints": ["Shift each letter backward in the alphabet by 3 positions.", "K minus 3 is H. H minus 3 is E.", "It's the clown's mocking greeting."]
+  },
+  {
+    "id": "p3",
+    "type": "sequence",
+    "difficulty": "investigator",
+    "title": "The Toll of the Cursed Bells",
+    "description": "The cathedral bells toll at strange intervals: 2, 3, 5, 7, 11, 13, ?. What is the next bell count?",
+    "sequence": [2, 3, 5, 7, 11, 13],
+    "target": "?",
+    "answer": "17",
+    "acceptableAnswers": ["17"],
+    "rule": "Prime numbers in ascending order.",
+    "hints": ["These are not merely odd numbers; notice 2 is included.", "Numbers only divisible by 1 and themselves.", "The prime number immediately following 13."]
+  },
+  {
+    "id": "p4",
+    "type": "logic",
+    "difficulty": "cryptographer",
+    "title": "The Three Haunted Statues",
+    "description": "Three statues stand before the crypt: Jack (Jester), Crow (Raven), and Grim (Reaper). Only ONE statue tells the truth; the other two always lie.\n- Jester says: 'The key is inside the Reaper.'\n- Raven says: 'I do not have the key.'\n- Reaper says: 'The Jester is lying.'\nWho holds the key: JESTER, RAVEN, or REAPER?",
+    "answer": "RAVEN",
+    "acceptableAnswers": ["RAVEN", "raven", "the raven", "crow"],
+    "rule": "If Jester tells truth -> Reaper lies, but Raven's statement 'I don't have it' would mean Raven lies so Raven DOES have it, contradicting Jester. If Reaper tells truth -> Jester lies (key not in Reaper). Raven lies -> Raven DOES have the key! Thus Raven holds the key and Reaper is the sole truth-teller.",
+    "hints": ["Assume each statue tells the truth one by one and test for contradictions.", "Notice the conflict between Jester and Reaper.", "If Reaper tells the truth, Raven's denial must be a lie."]
+  },
+  {
+    "id": "p5",
+    "type": "pattern",
+    "difficulty": "master",
+    "title": "The Alchemist's Pentagram Code",
+    "description": "An alchemical formula reads: S-U-L-P-H-U-R = 7, B-L-O-O-D = 5, S-E-W-E-R = 5. A lock requires the value of N-I-G-H-T-M-A-R-E. What number turns the tumbler?",
+    "formula": "Count the number of distinct letters: N, I, G, H, T, M, A, R, E",
+    "answer": "9",
+    "acceptableAnswers": ["9", "nine"],
+    "rule": "The count of letters in the horror word.",
+    "hints": ["Count the letters in SULPHUR (7), BLOOD (5), SEWER (5).", "Apply the same logic to NIGHTMARE.", "Count: N-I-G-H-T-M-A-R-E."]
+  }
+]

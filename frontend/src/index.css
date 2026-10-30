@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-burgundy: #4B1018;
+  --color-blood-red: #A51F2B;
+  --color-bright-red: #E62A3B;
+  --color-muted-cream: #F4E4CC;
+  --color-midnight: #111827;
+  --color-dark-purple: #30213E;
+  --color-antique-gold: #D6A56C;
+  --color-shadow: rgba(0, 0, 0, 0.75);
+
+  --font-serif: 'Cinzel', Georgia, serif;
+  --font-horror: 'Creepster', 'Cinzel', cursive, serif;
+  --font-story: 'Playfair Display', 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-midnight);
+  color: var(--color-muted-cream);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Atmospheric custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-burgundy);
+  border-radius: 4px;
+  border: 1px solid var(--color-antique-gold);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-blood-red);
+}
+
+/* Atmospheric Glows & Shadows */
+.glow-red {
+  box-shadow: 0 0 25px rgba(165, 31, 43, 0.45);
+}
+.glow-gold {
+  box-shadow: 0 0 20px rgba(214, 165, 108, 0.35);
+}
+.text-glow-red {
+  text-shadow: 0 0 12px rgba(230, 42, 59, 0.65), 0 0 24px rgba(165, 31, 43, 0.4);
+}
+.text-glow-gold {
+  text-shadow: 0 0 10px rgba(214, 165, 108, 0.5);
+}
+
+/* Fog Animation Overlay */
+.fog-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 50%, transparent 40%, rgba(17, 24, 39, 0.7) 100%),
+              linear-gradient(180deg, rgba(75, 16, 24, 0.15) 0%, transparent 50%, rgba(17, 24, 39, 0.6) 100%);
+  z-index: 1;
+}
+
+/* Candle Flame Flicker */
+@keyframes flicker {
+  0%, 100% { opacity: 0.95; transform: scale(1); }
+  25% { opacity: 0.8; transform: scale(0.97) skewX(-1deg); }
+  50% { opacity: 1; transform: scale(1.05) skewX(1deg); }
+  75% { opacity: 0.88; transform: scale(0.98); }
+}
+
+.candle-flicker {
+  animation: flicker 2.4s infinite ease-in-out;
+}
+
+/* Subtle Floating Balloon Keyframes */
+@keyframes floatBalloon {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-16px) rotate(2deg); }
+}
+
+.floating-balloon {
+  animation: floatBalloon 5s ease-in-out infinite;
+}
+
+/* Horror Button Stylings */
+.btn-horror {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--color-burgundy), #2A090E);
+  color: var(--color-muted-cream);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-horror:hover {
+  background: linear-gradient(135deg, var(--color-blood-red), var(--color-burgundy));
+  border-color: #F4E4CC;
+  box-shadow: 0 0 20px rgba(165, 31, 43, 0.6), 0 4px 20px rgba(0, 0, 0, 0.8);
+  transform: translateY(-2px);
+}
+
+.btn-horror:active {
+  transform: translateY(1px);
+}
+
+.btn-horror-gold {
+  background: linear-gradient(135deg, #8A6432, var(--color-antique-gold));
+  color: #111827;
+  border: 1px solid #FFE4B5;
+  font-weight: 800;
+}
+.btn-horror-gold:hover {
+  background: linear-gradient(135deg, var(--color-antique-gold), #FFE4B5);
+  box-shadow: 0 0 25px rgba(214, 165, 108, 0.7);
+  transform: translateY(-2px);
+}
+
+.btn-horror-outline {
+  background: rgba(17, 24, 39, 0.7);
+  border: 1px solid rgba(214, 165, 108, 0.4);
+  color: var(--color-muted-cream);
+}
+.btn-horror-outline:hover {
+  background: rgba(75, 16, 24, 0.4);
+  border-color: var(--color-antique-gold);
+}
+
+/* Glassmorphism Horror Panels */
+.horror-card {
+  background: linear-gradient(165deg, rgba(48, 33, 62, 0.65) 0%, rgba(17, 24, 39, 0.85) 100%);
+  border: 1px solid rgba(214, 165, 108, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.horror-card:hover {
+  border-color: var(--color-blood-red);
+  box-shadow: 0 15px 35px rgba(165, 31, 43, 0.25), 0 0 20px rgba(0, 0, 0, 0.8);
+}

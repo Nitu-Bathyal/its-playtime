@@ -1,0 +1,82 @@
+[
+  {
+    "id": "r1",
+    "category": "haunted",
+    "difficulty": "easy",
+    "question": "I have no flesh, no feathers, no scales, and no bone. Yet I have four fingers and a thumb of my own. In the dark cellar, you feel me slip over your hand...",
+    "answer": "glove",
+    "acceptableAnswers": ["glove", "a glove", "gloves", "rubber glove", "leather glove"],
+    "hint": "You wear it to keep warm or hide your fingerprints.",
+    "lore": "The town's gravedigger left his leather glove beside the mausoleum gate."
+  },
+  {
+    "id": "r2",
+    "category": "carnival",
+    "difficulty": "medium",
+    "question": "I laugh when you laugh, I frown when you frown. I have no voice, but in the hall of mirrors, I mimic you upside down. Smash me, and seven years of dread will follow you around. What am I?",
+    "answer": "mirror",
+    "acceptableAnswers": ["mirror", "a mirror", "looking glass", "reflection"],
+    "hint": "Found in the carnival funhouse and above your bathroom sink.",
+    "lore": "The mirror in the funhouse doesn't reflect your face, but what stands right behind you."
+  },
+  {
+    "id": "r3",
+    "category": "mystery",
+    "difficulty": "hard",
+    "question": "I have keys that open no doors, space but no room to breathe. You can enter, but you can never leave. I click in the dead silence of the abandoned newspaper office. What am I?",
+    "answer": "keyboard",
+    "acceptableAnswers": ["keyboard", "a keyboard", "typewriter", "piano"],
+    "hint": "It has letters, numbers, and an 'Enter' key.",
+    "lore": "The last reporter in Derry typed a final warning before the sewer drains overflowed."
+  },
+  {
+    "id": "r4",
+    "category": "clown",
+    "difficulty": "medium",
+    "question": "I am light as air, filled with breath, yet tied by a thread to fate and death. When I float by your window, crimson and bright, you know you won't survive the night. What am I?",
+    "answer": "red balloon",
+    "acceptableAnswers": ["red balloon", "balloon", "a balloon", "a red balloon"],
+    "hint": "The signature emblem floating above the storm drain.",
+    "lore": "They float down here... and you'll float too."
+  },
+  {
+    "id": "r5",
+    "category": "ghost",
+    "difficulty": "hard",
+    "question": "The more you take from me, the larger I become. I dwell beneath the abandoned carnival stage, swallowing the brave and unwary. What am I?",
+    "answer": "hole",
+    "acceptableAnswers": ["hole", "a hole", "pit", "grave", "void"],
+    "hint": "Digging makes it bigger, not smaller.",
+    "lore": "A bottomless pit was uncovered beneath the Ferris wheel in 1988."
+  },
+  {
+    "id": "r6",
+    "category": "supernatural",
+    "difficulty": "easy",
+    "question": "I weep wax tears in the dark of night. Without my flame, you have no sight. The wind howls down the chimney to snuff out my life. What am I?",
+    "answer": "candle",
+    "acceptableAnswers": ["candle", "a candle", "taper", "wax candle"],
+    "hint": "Melts as it burns in the haunted chapel.",
+    "lore": "Candles placed on the altar of the Blackwood Estate flicker blue when spirits draw near."
+  },
+  {
+    "id": "r7",
+    "category": "psychological",
+    "difficulty": "nightmare",
+    "question": "I follow you in sunlight, flee you in the deep gloom. I mimic every gesture in the candlelit room. When midnight strikes, I step out from the wall. What am I?",
+    "answer": "shadow",
+    "acceptableAnswers": ["shadow", "a shadow", "my shadow", "the shadow"],
+    "hint": "Cast by your body against the light.",
+    "lore": "The clown's shadow detached itself from the wall and offered a twisted bow."
+  },
+  {
+    "id": "r8",
+    "category": "mansion",
+    "difficulty": "medium",
+    "question": "I have a heart that doesn't beat, two hands that never hold, and a face that never smiles as centuries turn cold. At midnight I chime with tolling bell. What am I?",
+    "answer": "clock",
+    "acceptableAnswers": ["clock", "a clock", "grandfather clock", "timepiece", "watch"],
+    "hint": "Ticks away the seconds in the manor hallway.",
+    "lore": "The grandfather clock stopped at 3:33 AM on the night the family vanished."
+  }
+]

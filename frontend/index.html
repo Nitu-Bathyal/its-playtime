@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4B1018" />
+    <meta name="description" content="IT's Playtime - An advanced offline-first AI horror gaming platform. Every game has a dark side. Wanna play?" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
+
+    <title>IT's Playtime 🎈 | Offline-First AI Horror Gaming Platform</title>
+
+    <!-- Google Fonts with graceful offline system font fallback -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Creepster&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-midnight text-cream select-none antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Service Worker Registration for PWA & Offline Support -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('🎈 ServiceWorker registered with scope:', registration.scope);
+              window.__SW_REGISTERED__ = true;
+            })
+            .catch((err) => {
+              console.warn('🎈 ServiceWorker registration failed:', err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

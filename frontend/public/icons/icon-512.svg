@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="balloonGrad512" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FF4D5A" />
+      <stop offset="40%" stop-color="#A51F2B" />
+      <stop offset="100%" stop-color="#4B1018" />
+    </radialGradient>
+    <radialGradient id="glowGrad512" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A51F2B" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#111827" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="#111827" rx="100" />
+  <circle cx="256" cy="210" r="190" fill="url(#glowGrad512)" />
+  
+  <ellipse cx="256" cy="195" rx="130" ry="155" fill="url(#balloonGrad512)" filter="drop-shadow(0 15px 30px rgba(0,0,0,0.8))" />
+  <ellipse cx="210" cy="130" rx="36" ry="18" fill="#FFFFFF" opacity="0.38" transform="rotate(-20 210 130)" />
+  
+  <polygon points="256,350 236,370 276,370" fill="#75131C" />
+  <path d="M 256,370 Q 230,410 262,450 T 252,490" fill="none" stroke="#D6A56C" stroke-width="6" stroke-linecap="round" />
+  
+  <path d="M 205,225 Q 256,290 307,225" fill="none" stroke="#F4E4CC" stroke-width="7" stroke-linecap="round" opacity="0.85" />
+  <circle cx="218" cy="195" r="7" fill="#F4E4CC" opacity="0.85" />
+  <circle cx="294" cy="195" r="7" fill="#F4E4CC" opacity="0.85" />
+</svg>

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "story_carnival_1",
+    "category": "Creepy carnival",
+    "intensity": "Chilling dread",
+    "title": "The Marionette's Carousel",
+    "paragraphs": [
+      "The carnival had been condemned since the storm of 1974, yet as you pushed through the rusted wrought-iron turnstile, the faint scent of caramelized sugar and ozone lingered in the autumn mist. A solitary red balloon drifted through the skeletal ribs of the roller coaster, bobbing gently as if guided by an invisible tether.",
+      "Ahead stood the Grand Carousel. Its carved wooden horses had peeled and cracked, their glass eyes glistening under the crescent moon. Then, without electricity or wind, a calliope organ wheezed to life. A jagged, dissonant waltz echoed across the midway. In the center mirror pedestal of the carousel, a figure in a silver-ruffed collar tilted its head.",
+      "'Every ticket has a price, wanderer,' a melodic, raspy voice whispered from the speakers overhead. 'Will you take the reins, or step into the funhouse behind you?'"
+    ],
+    "choices": [
+      {
+        "id": "c1",
+        "text": "Mount the black carousel steed with the silver bridle.",
+        "outcome": "The wooden horse shudders beneath you, its hooves locking into the brass floor as the carousel accelerates to dizzying speed. Through the spinning lights, the clown steps onto the platform beside you, presenting an ornate brass key dripping with sewer water.",
+        "nextStage": "stage_carousel_ride",
+        "ending": false
+      },
+      {
+        "id": "c2",
+        "text": "Flee toward the neon-flickering Funhouse of Mirrors.",
+        "outcome": "You plunge into the mirrored labyrinth. Everywhere you turn, hundredfold reflections of yourself stare back—except in every third pane, your reflection is smiling with rows of razor-sharp needle teeth.",
+        "nextStage": "stage_mirror_hall",
+        "ending": false
+      },
+      {
+        "id": "c3",
+        "text": "Sever the red balloon's string with your pocketknife.",
+        "outcome": "The rubber membrane shrieks like a wounded animal as it pops. A thick crimson fog billows out, extinguishing the moonlight and revealing a hidden trapdoor leading beneath the carnival ground.",
+        "nextStage": "stage_balloon_burst",
+        "ending": false
+      }
+    ]
+  },
+  {
+    "id": "story_haunted_house_1",
+    "category": "Haunted house",
+    "intensity": "Pure nightmare",
+    "title": "The Whispering Walls of Ravenscroft",
+    "paragraphs": [
+      "The storm drove you through the double doors of Ravenscroft Manor. The lock engaged behind you with the resounding clunk of a tomb sealing. A grand grandfather clock struck thirteen, its pendulum motionless while the hands spun counterclockwise in an erratic frenzy.",
+      "From the gallery overhead, portraits of the vanished Ravenscroft bloodline seemed to track your every step. Their painted pupils gleamed in the candelabra's dying flare. A damp draft brought the putrid smell of river silt and ancient decay.",
+      "At the end of the corridor, three doors stood ajar: one weeping black water beneath the jamb, one humming with the high-pitched vibration of a tuning fork, and a trapdoor leading down into the wine cellar from which a young child's laugh echoed."
+    ],
+    "choices": [
+      {
+        "id": "c1",
+        "text": "Approach the door weeping black sewer water.",
+        "outcome": "The door swings open into an impossible flooded conduit. Resting upon a dry pedestal is a rusted music box playing the carnival overture.",
+        "nextStage": "stage_flooded_corridor",
+        "ending": false
+      },
+      {
+        "id": "c2",
+        "text": "Descend into the wine cellar toward the child's laughter.",
+        "outcome": "You descend into the gloom. A ring of children's shoes surrounds a glowing red balloon anchored to a storm drain. A chalk message on the stone wall reads: 'WE ALL FLOAT HERE'.",
+        "nextStage": "stage_cellar_drain",
+        "ending": false
+      },
+      {
+        "id": "c3",
+        "text": "Search the library for the Master's diary before proceeding.",
+        "outcome": "Dust clouds choke you as you pull down the leather ledger. An entry dated yesterday is written in your own handwriting: 'I finally came back. The clown was waiting.'",
+        "nextStage": "stage_library_revelation",
+        "ending": false
+      }
+    ]
+  },
+  {
+    "id": "story_psychological_1",
+    "category": "Psychological horror",
+    "intensity": "Eerie whisper",
+    "title": "The Memory That Isn't Yours",
+    "paragraphs": [
+      "It started with a polaroid photograph you found tucked under your car's windshield wiper. It depicted a boy in a yellow raincoat standing at the mouth of an arched concrete storm drain. In the background stood the red striped canvas of a carnival tent.",
+      "The chilling part wasn't the grinning silhouette watching from inside the pipe. It was the handwriting on the back in your mother's script: 'Billy's 7th Birthday. He never came home.'",
+      "Your name isn't Billy. Yet you remember the damp smell of that rain, the cold iron grating beneath your boots, and the melody of the clown's brass horn."
+    ],
+    "choices": [
+      {
+        "id": "c1",
+        "text": "Drive to the town coordinates scrawled on the photo edge.",
+        "outcome": "You arrive at the edge of the abandoned town of Derrybrook at twilight. The road has collapsed into a sinkhole, and red balloons line the barbed-wire fence like silent sentinels.",
+        "nextStage": "stage_derrybrook_road",
+        "ending": false
+      },
+      {
+        "id": "c2",
+        "text": "Call the number stamped on the old carnival ticket in your pocket.",
+        "outcome": "The rotary phone connects after one ring. A chorus of voices whispers in unison: 'We've been holding your seat in the front row for thirty years.'",
+        "nextStage": "stage_carnival_call",
+        "ending": false
+      },
+      {
+        "id": "c3",
+        "text": "Burn the photograph in your hearth.",
+        "outcome": "The flames refuse to consume the image; instead, the smoke pools against your ceiling into the shape of a smiling face with ruffled hair.",
+        "nextStage": "stage_smoke_face",
+        "ending": false
+      }
+    ]
+  }
+]
