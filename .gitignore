@@ -10,6 +10,7 @@ dist/
 frontend/dist/
 
 # Logs & temp
+demo_assets/
 *.log
 .DS_Store
 Thumbs.db

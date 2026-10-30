@@ -64,6 +64,21 @@ export default function App() {
     }
     loadAchievements();
 
+    // Expose helpers for automated demo navigation
+    window.__setGame = (gameId) => setCurrentView(gameId);
+    window.__openModal = (modalName) => {
+      if (modalName === 'ai') setShowAiModal(true);
+      if (modalName === 'achievements') setShowAchievementsModal(true);
+      if (modalName === 'player') setShowPlayerModal(true);
+      if (modalName === 'leaderboard') setShowLeaderboardModal(true);
+    };
+    window.__closeModals = () => {
+      setShowAiModal(false);
+      setShowAchievementsModal(false);
+      setShowPlayerModal(false);
+      setShowLeaderboardModal(false);
+    };
+
     // Listen for PWA beforeinstallprompt
     const handleBeforeInstall = (e) => {
       e.preventDefault();
