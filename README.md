@@ -6,10 +6,12 @@
 [![AI Engine](https://img.shields.io/badge/Local_AI-Qwen_2.5_3B_Instruct-blue.svg)](https://ollama.com)
 [![Frontend](https://img.shields.io/badge/Frontend-React_18_+_Vite_+_Tailwind-61dafb.svg)](https://react.dev)
 [![Backend](https://img.shields.io/badge/Backend-Python_3.13_+_Flask-black.svg)](https://flask.palletsprojects.com/)
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Play_Online-red?style=for-the-badge&logo=githubpages)](https://nitu-bathyal.github.io/its-playtime/)
+[![Live on Render](https://img.shields.io/badge/Deployed_on-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://its-playtime-frontend.onrender.com/)
+[![Live Mirror](https://img.shields.io/badge/Live_Mirror-GitHub_Pages-blue?style=for-the-badge&logo=githubpages)](https://nitu-bathyal.github.io/its-playtime/)
 [![Demo Video](https://img.shields.io/badge/Demo_Video-1080p_Project_Demo-gold?style=for-the-badge&logo=youtube)](demo/ITs_Playtime_Project_Demo.mp4)
 
-> 🎮 **Play Live Now:** [https://nitu-bathyal.github.io/its-playtime/](https://nitu-bathyal.github.io/its-playtime/)  
+> 🎈 **Live Application (Render):** [https://its-playtime-frontend.onrender.com/](https://its-playtime-frontend.onrender.com/)  
+> 🌐 **Live Mirror (GitHub Pages):** [https://nitu-bathyal.github.io/its-playtime/](https://nitu-bathyal.github.io/its-playtime/)  
 > 🎬 **Watch Full HD Project Demo Video:** [demo/ITs_Playtime_Project_Demo.mp4](demo/ITs_Playtime_Project_Demo.mp4) (Complete Walkthrough of all 7 Games, AI & PWA)
 
 ---
