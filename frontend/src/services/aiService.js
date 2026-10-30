@@ -2,7 +2,8 @@ import { OFFLINE_RIDDLES, OFFLINE_PUZZLES, OFFLINE_STORIES } from './offlineBank
 
 class AIServiceClient {
   constructor() {
-    this.apiBase = '/api';
+    const customBase = import.meta.env.VITE_API_BASE_URL;
+    this.apiBase = customBase ? customBase.replace(/\/$/, '') + '/api' : '/api';
     this.isBackendAvailable = false;
     this.isOllamaAvailable = false;
     this.modelName = 'qwen2.5:3b';

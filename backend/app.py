@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from ai_service import AIService
 from story_service import StoryService
@@ -107,7 +107,25 @@ def verify_puzzle():
     res = puzzle_service.verify_solution(puzzle_id, solution, acceptable)
     return jsonify(res)
 
+DIST_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "frontend", "dist"))
+
+@app.route("/", defaults={"path": ""})
+@app.route("/<path:path>")
+def serve_frontend(path):
+    # Don't intercept API routes
+    if path.startswith("api/"):
+        return jsonify({"error": "Endpoint not found"}), 404
+        
+    if path != "" and os.path.exists(os.path.join(DIST_DIR, path)):
+        return send_from_directory(DIST_DIR, path)
+    if os.path.exists(os.path.join(DIST_DIR, "index.html")):
+        return send_from_directory(DIST_DIR, "index.html")
+    return jsonify({
+        "status": "IT's Playtime Backend is running",
+        "api_docs": "/api/health"
+    })
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    print(f"[*] IT's Playtime Backend running on http://127.0.0.1:{port}")
-    app.run(host="127.0.0.1", port=port, debug=False)
+    print(f"[*] IT's Playtime running on http://0.0.0.0:{port}")
+    app.run(host="0.0.0.0", port=port, debug=False)
