@@ -8,8 +8,8 @@ from mystery_service import MysteryService
 from puzzle_service import PuzzleService
 
 app = Flask(__name__)
-# Enable CORS for frontend dev server & preview
-CORS(app, resources={r"/api/*": {"origins": "*"}})
+# Enable CORS for frontend dev server, preview, and production domains
+CORS(app, resources={r"/api/*": {"origins": "*"}}, supports_credentials=True)
 
 # Initialize services
 ai_service = AIService()

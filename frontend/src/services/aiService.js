@@ -2,8 +2,12 @@ import { OFFLINE_RIDDLES, OFFLINE_PUZZLES, OFFLINE_STORIES } from './offlineBank
 
 class AIServiceClient {
   constructor() {
-    const customBase = import.meta.env.VITE_API_BASE_URL;
-    this.apiBase = customBase ? customBase.replace(/\/$/, '') + '/api' : '/api';
+    let customBase = (import.meta.env.VITE_API_BASE_URL || '').trim().replace(/\/$/, '');
+    if (customBase) {
+      this.apiBase = customBase.endsWith('/api') ? customBase : `${customBase}/api`;
+    } else {
+      this.apiBase = '/api';
+    }
     this.isBackendAvailable = false;
     this.isOllamaAvailable = false;
     this.modelName = 'qwen2.5:3b';

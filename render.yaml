@@ -1,13 +1,36 @@
+# Render Blueprint for IT's Playtime
+# https://render.com/docs/blueprint-spec
+
 services:
-  # All-in-One Full-Stack Web Service (Flask + Built React Frontend)
+  # 1. Frontend: React + Vite Static Site (Free Global CDN)
+  - type: static
+    name: its-playtime-frontend
+    repo: https://github.com/Nitu-Bathyal/its-playtime
+    branch: main
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    publishDir: dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        fromService:
+          type: web
+          name: its-playtime-backend
+          envVarKey: RENDER_EXTERNAL_URL
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+
+  # 2. Backend: Python Flask AI Service with Gunicorn
   - type: web
-    name: its-playtime-fullstack
+    name: its-playtime-backend
+    repo: https://github.com/Nitu-Bathyal/its-playtime
+    branch: main
     runtime: python
     plan: free
-    buildCommand: "cd frontend && npm install && npm run build && cd ../backend && pip install -r requirements.txt"
-    startCommand: "gunicorn --chdir backend app:app"
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT app:app
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
-      - key: NODE_VERSION
-        value: 20.0.0
