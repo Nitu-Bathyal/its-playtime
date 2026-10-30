@@ -6,6 +6,9 @@
 [![AI Engine](https://img.shields.io/badge/Local_AI-Qwen_2.5_3B_Instruct-blue.svg)](https://ollama.com)
 [![Frontend](https://img.shields.io/badge/Frontend-React_18_+_Vite_+_Tailwind-61dafb.svg)](https://react.dev)
 [![Backend](https://img.shields.io/badge/Backend-Python_3.13_+_Flask-black.svg)](https://flask.palletsprojects.com/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Play_Online-red?style=for-the-badge&logo=githubpages)](https://nitu-bathyal.github.io/its-playtime/)
+
+> 🎮 **Play Live Now:** [https://nitu-bathyal.github.io/its-playtime/](https://nitu-bathyal.github.io/its-playtime/)
 
 ---
 
