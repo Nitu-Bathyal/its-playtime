@@ -1,11 +1,11 @@
 const CACHE_NAME = 'its-playtime-v1';
 const PRECACHE_ASSETS = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/favicon.svg',
-  '/icons/icon-192.svg',
-  '/icons/icon-512.svg'
+  './',
+  './index.html',
+  './manifest.json',
+  './favicon.svg',
+  './icons/icon-192.svg',
+  './icons/icon-512.svg'
 ];
 
 // Install: Cache critical shell assets
