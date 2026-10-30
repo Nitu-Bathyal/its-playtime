@@ -6,6 +6,7 @@ backend/__pycache__/
 *.pyc
 
 # Build outputs
+dist/
 frontend/dist/
 
 # Logs & temp
